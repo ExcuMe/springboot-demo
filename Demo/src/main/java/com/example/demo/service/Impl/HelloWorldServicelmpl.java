@@ -1,6 +1,6 @@
-package com.InterfaceImpl;
+package com.example.demo.service.Impl;
 
-import com.Interface.HelloWorldService;
+import com.example.demo.service.HelloWorldService;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
