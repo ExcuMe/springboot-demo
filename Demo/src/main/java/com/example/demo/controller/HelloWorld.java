@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import com.Interface.HelloWorldService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +11,11 @@ class HelloWorld {
     @Autowired
     private HelloWorldService helloWorldService;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/helloWorld")
     public String say(){
         if(helloWorldService!=null)
-    return helloWorldService.getMessage();
+            return helloWorldService.getMessage();
         else
             return "helloworld";
-}
+    }
 }
