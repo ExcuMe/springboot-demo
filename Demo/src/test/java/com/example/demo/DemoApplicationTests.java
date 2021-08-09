@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import com.example.demo.bean.Person;
+import com.example.demo.bean.Student;
+import com.example.demo.proxy.StudentStaticProxy;
 import com.example.demo.service.HelloWorldService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,6 +24,13 @@ public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
+	}
+
+	@Test
+	public void staticProxyTest(){
+		Person student = new Student("zhangSan");
+		Person studentProxy = new StudentStaticProxy(student);
+		studentProxy.commitFee();
 	}
 
 }
