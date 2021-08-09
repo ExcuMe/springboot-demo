@@ -1,4 +1,4 @@
-package com.example.demo.proxy;
+package com.example.demo.proxy.JDK;
 
 import com.example.demo.bean.Person;
 import com.example.demo.bean.Student;
