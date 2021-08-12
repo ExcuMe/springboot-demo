@@ -35,7 +35,7 @@ public class StudentDynamicProxy {
         // 获得stuProxyClass 中一个带InvocationHandler参数的构造器constructor
         Constructor<?> constructor = stuProxyClass.getConstructor(InvocationHandler.class);
 
-        // 通过构造器constructor来创建一个动态实例stuProxy
+        // 通过构造器constructor来创建一个动态实例stuProxy ,动态加载一个stuProxy类（包含InvocationHandler）
         Person stuProxy = (Person) constructor.newInstance(stuHandler);
         stuProxy.commitFeeCheck();
 
