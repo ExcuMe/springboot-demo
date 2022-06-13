@@ -6,3 +6,8 @@ spring:
       name: user # 账号
       password: user # 密码
       roles: ADMIN # 拥有角色
+  rabbitmq:
+    host: 10.20.42.206
+    port: 5672
+    username: opdc3
+    password: opdc3
